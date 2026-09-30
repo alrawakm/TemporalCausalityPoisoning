@@ -1,0 +1,61 @@
+Temporal Causality Poisoning - language-model arm
+topology 91d855455d38f1bb | seed 20260920 | N=20 | family disagreement (late arrival, event time and collection time conflict)
+suspicion flag shown to the responder: NO
+condition: A  chain vocabulary appears only in the chain
+incidents with a clock-sorter prediction: 20 of 20
+magnitudes per incident: 0.0, 0.5, 1.0, 1.25, 1.5, 1.75, 2.0 x predicted
+repeats per cell: 3
+total calls: 420
+Traceback (most recent call last):
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\run_llm.py", line 208, in <module>
+    main()
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\run_llm.py", line 199, in main
+    rows = run(client, a.show_flags, shared_vocab=a.shared,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\run_llm.py", line 84, in run
+    v = responder.respond(p, nonce=rep)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\responder.py", line 147, in respond
+    text = self.call(prompt, nonce)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\llm_client.py", line 72, in __call__
+    text = self.inner(prompt)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\llm_client.py", line 248, in call
+    raise RuntimeError("codex failed %d times. last error:\n%s" % (retries, last))
+RuntimeError: codex failed 3 times. last error:
+codex exit 1, no output file.
+--- stderr ---
+OpenAI Codex v0.158.0-alpha.2.1
+--------
+workdir: C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code
+model: gpt-6-astra
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: low
+reasoning summaries: none
+session id: 01a0e37f-7eb6-7fd2-a20c-269c6fe23977
+--------
+user
+You are an incident responder. Below are security events from several sources, delivered in the order the collector received them. Each event has a source clock time and a received time, both in milliseconds.
+
+Reconstruct what happened. Identify the asset where the incident originated. Then answer in exactly this form:
+ORIGIN: <asset name, or NONE>
+REMEDIATION: <one short sentence>
+
+Events:
+id=7 time=1789981212654.8 received=1789981212825.7 source=endpoint asset=host-c action=scan
+id=6 time=1789981214114.0 received=1789981214236.5 source=endpoint asset=worker-01 action=login
+id=0 time=1789981214968.3 received=1789981215169.4 source=identity asset=u-dave action=credential_use
+id=5 time=1789981215408.7 received=1789981215655.4 source=identity asset=u-alice action=heartbeat
+id=1 time=1789981217548.2 received=1789981221565.4 source=cloud asset=web-01 action=session_open
+id=8 time=1789981223607.0 received=1789981223766.5 source=identity asset=u-carol action=read
+id=2 time=1789981222838.6 received=1789981226887.8 source=cloud asset=web-01 action=config_change
+id=9 time=1789981225651.7 received=1789981229706.1 source=cloud asset=db-primary action=scan
+id=4 time=1789981243498.2 received=1789981243592.5 source=endpoint asset=host-a action=scan
+id=3 time=1789981246191.9 received=1789981246393.6 source=endpoint asset=u-dave action=account_blocked
+
+ERROR: You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 8:11 PM.
+ERROR: You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 8:11 PM.
+

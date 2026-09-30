@@ -1,0 +1,36 @@
+Temporal Causality Poisoning - language-model arm
+topology 91d855455d38f1bb | seed 20260920 | N=20 | family disagreement (late arrival, event time and collection time conflict)
+suspicion flag shown to the responder: NO
+incidents with a clock-sorter prediction: 20 of 20
+magnitudes per incident: 0.0, 0.5, 1.0, 2.0 x predicted
+total calls: 80
+Traceback (most recent call last):
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\run_llm.py", line 181, in <module>
+    main()
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\run_llm.py", line 173, in main
+    rows = run(client, a.show_flags)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\run_llm.py", line 77, in run
+    v = responder.respond(p)
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\responder.py", line 145, in respond
+    text = self.call(self.render(inc))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\llm_client.py", line 50, in __call__
+    text = self.inner(prompt)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code\llm_client.py", line 167, in call
+    raise RuntimeError("codex exit %d, no output file. stderr: %s"
+RuntimeError: codex exit 1, no output file. stderr: OpenAI Codex v0.155.0-alpha.2.6
+--------
+workdir: C:\Users\User\Claude\Publication 2026\13_TemporalCausality\code
+model: gpt-6-astra
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: low
+reasoning summaries: none
+session id: 01a0c4fb-921f-7220-892f-eac4baa4d3ea
+--------
+user
+You are an incident responder. Below are security events from several sources, delivered in the order th

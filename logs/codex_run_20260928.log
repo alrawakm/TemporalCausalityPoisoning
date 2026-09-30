@@ -1,0 +1,30 @@
+Temporal Causality Poisoning - language-model arm
+topology 91d855455d38f1bb | seed 20260920 | N=20 | family disagreement (late arrival, event time and collection time conflict)
+suspicion flag shown to the responder: NO
+condition: A  chain vocabulary appears only in the chain
+incidents with a clock-sorter prediction: 20 of 20
+magnitudes per incident: 0.0, 0.5, 1.0, 1.25, 1.5, 1.75, 2.0 x predicted
+repeats per cell: 3
+total calls: 420
+
+==============================================================================
+  codex exec
+==============================================================================
+  multiple            n      correct  misattrib    abstain
+  --------------------------------------------------------------------------
+  0.0x               60          78%         3%         3%
+  0.5x               60          85%         2%         3%
+  1.0x               60          92%         3%         0%
+  1.2x               60          62%        15%        10%
+  1.5x               60          55%        18%        10%
+  1.8x               60          53%        25%         7%
+  2.0x               60          52%        30%         3%
+
+  baseline accuracy            78%
+  misattribution at 1.0x       3%
+
+  A clock-sorter predicts near 0% at 0.5x and near 100% at 1.0x.
+  Any deviation from that is the finding.
+
+  live calls 154, cache hits 266, budget 260
+  wrote llm_results.json
