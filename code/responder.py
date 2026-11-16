@@ -32,6 +32,42 @@ class Verdict:
     note: str = ""
 
 
+class AgreementResponder:
+    """Names an origin only when both observed clocks agree on the earliest.
+
+    Added 2026-11-07. The interval defense fails because it needs a half-width
+    and no admissible half-width exists. This needs no parameter at all: it asks
+    whether the two clocks still order the suspicious events the same way, and
+    declines when they do not. Declining is a cost and the scoring code reports
+    it separately from misattribution.
+    """
+
+    name = "agreement"
+
+    def respond(self, inc: Incident) -> Verdict:
+        rows = list(inc.observable())
+        by_src = sorted(rows, key=lambda r: r["time"])
+        by_ing = sorted(rows, key=lambda r: r["received"])
+        order = [r["id"] for r in by_src]
+
+        def first_suspicious(seq):
+            for r in seq:
+                if r["suspicious"]:
+                    return r
+            return None
+
+        a = first_suspicious(by_src)
+        b = first_suspicious(by_ing)
+        if a is None or b is None:
+            return Verdict(None, None, order, declined=True,
+                           note="no suspicious event in the stream")
+        if a["asset"] != b["asset"]:
+            return Verdict(None, None, order, declined=True,
+                           note="the two clocks disagree on the earliest suspicious event")
+        kind = BY_NAME[a["asset"]].kind
+        return Verdict(a["asset"], REMEDIATION[kind], order)
+
+
 class OrderingResponder:
     """Sorts by observed time, blames the first suspicious thing it sees.
 

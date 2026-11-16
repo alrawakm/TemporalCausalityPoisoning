@@ -25,6 +25,14 @@ TIER2_MS = KERBEROS_SKEW_S * 1000.0       # 300_000
 
 FAMILIES = ("offset", "zone", "delay", "duplicate", "tie", "disagreement")
 
+# Added 2026-11-07. `coherent` moves both observed clocks of one source by the
+# same amount in the same direction, which leaves a cross-clock agreement check
+# with nothing to disagree about. Its analogue is a source whose clock is wrong
+# and whose collection time is stamped relative to that clock. It is deliberately
+# NOT in FAMILIES: the five-family matrix is a published result and this
+# perturbation exists to attack the agreement responder, not to join that set.
+EXTRA_FAMILIES = ("coherent",)
+
 ANALOGUE = {
     "offset": "clock drift on one source",
     "zone": "a misconfigured time zone",
@@ -52,7 +60,7 @@ def perturb(inc: Incident, family: str, magnitude_ms: float,
     the control's apparent time is the transformation that turns a response into
     a cause.
     """
-    if family not in FAMILIES:
+    if family not in FAMILIES + EXTRA_FAMILIES:
         raise ValueError("unknown family: " + family)
 
     rng = random.Random(seed)
@@ -102,6 +110,13 @@ def perturb(inc: Incident, family: str, magnitude_ms: float,
         for e in hit:
             e.t_source_ms -= magnitude_ms
             e.t_ingest_ms += magnitude_ms / 2.0
+
+    elif family == "coherent":
+        # Both clocks, same size, same direction. An agreement check sees no
+        # disagreement, so this is the attack on that defense.
+        for e in hit:
+            e.t_source_ms -= magnitude_ms
+            e.t_ingest_ms -= magnitude_ms
 
     return out
 

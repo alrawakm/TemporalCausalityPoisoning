@@ -1,0 +1,562 @@
+[
+ {
+  "iid": 0,
+  "mult": 0.0,
+  "origin": "u-bob",
+  "base": "u-bob",
+  "true": "u-bob"
+ },
+ {
+  "iid": 0,
+  "mult": 0.5,
+  "origin": "u-bob",
+  "base": "u-bob",
+  "true": "u-bob"
+ },
+ {
+  "iid": 0,
+  "mult": 1.0,
+  "origin": "u-bob",
+  "base": "u-bob",
+  "true": "u-bob"
+ },
+ {
+  "iid": 0,
+  "mult": 2.0,
+  "origin": "db-primary",
+  "base": "u-bob",
+  "true": "u-bob"
+ },
+ {
+  "iid": 1,
+  "mult": 0.0,
+  "origin": "svc-backup",
+  "base": "svc-backup",
+  "true": "svc-backup"
+ },
+ {
+  "iid": 1,
+  "mult": 0.5,
+  "origin": "svc-backup",
+  "base": "svc-backup",
+  "true": "svc-backup"
+ },
+ {
+  "iid": 1,
+  "mult": 1.0,
+  "origin": "svc-backup",
+  "base": "svc-backup",
+  "true": "svc-backup"
+ },
+ {
+  "iid": 1,
+  "mult": 2.0,
+  "origin": "svc-backup",
+  "base": "svc-backup",
+  "true": "svc-backup"
+ },
+ {
+  "iid": 2,
+  "mult": 0.0,
+  "origin": null,
+  "base": null,
+  "true": "u-dave"
+ },
+ {
+  "iid": 2,
+  "mult": 0.5,
+  "origin": "u-dave",
+  "base": null,
+  "true": "u-dave"
+ },
+ {
+  "iid": 2,
+  "mult": 1.0,
+  "origin": "u-dave",
+  "base": null,
+  "true": "u-dave"
+ },
+ {
+  "iid": 2,
+  "mult": 2.0,
+  "origin": null,
+  "base": null,
+  "true": "u-dave"
+ },
+ {
+  "iid": 3,
+  "mult": 0.0,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 3,
+  "mult": 0.5,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 3,
+  "mult": 1.0,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 3,
+  "mult": 2.0,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 4,
+  "mult": 0.0,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 4,
+  "mult": 0.5,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 4,
+  "mult": 1.0,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 4,
+  "mult": 2.0,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 5,
+  "mult": 0.0,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 5,
+  "mult": 0.5,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 5,
+  "mult": 1.0,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 5,
+  "mult": 2.0,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 6,
+  "mult": 0.0,
+  "origin": "u-alice",
+  "base": "u-alice",
+  "true": "u-alice"
+ },
+ {
+  "iid": 6,
+  "mult": 0.5,
+  "origin": "u-alice",
+  "base": "u-alice",
+  "true": "u-alice"
+ },
+ {
+  "iid": 6,
+  "mult": 1.0,
+  "origin": "u-alice",
+  "base": "u-alice",
+  "true": "u-alice"
+ },
+ {
+  "iid": 6,
+  "mult": 2.0,
+  "origin": "build-01",
+  "base": "u-alice",
+  "true": "u-alice"
+ },
+ {
+  "iid": 7,
+  "mult": 0.0,
+  "origin": null,
+  "base": null,
+  "true": "u-dave"
+ },
+ {
+  "iid": 7,
+  "mult": 0.5,
+  "origin": "u-dave",
+  "base": null,
+  "true": "u-dave"
+ },
+ {
+  "iid": 7,
+  "mult": 1.0,
+  "origin": null,
+  "base": null,
+  "true": "u-dave"
+ },
+ {
+  "iid": 7,
+  "mult": 2.0,
+  "origin": null,
+  "base": null,
+  "true": "u-dave"
+ },
+ {
+  "iid": 8,
+  "mult": 0.0,
+  "origin": null,
+  "base": null,
+  "true": "u-bob"
+ },
+ {
+  "iid": 8,
+  "mult": 0.5,
+  "origin": "u-bob",
+  "base": null,
+  "true": "u-bob"
+ },
+ {
+  "iid": 8,
+  "mult": 1.0,
+  "origin": "u-bob",
+  "base": null,
+  "true": "u-bob"
+ },
+ {
+  "iid": 8,
+  "mult": 2.0,
+  "origin": "u-bob",
+  "base": null,
+  "true": "u-bob"
+ },
+ {
+  "iid": 9,
+  "mult": 0.0,
+  "origin": "svc-deploy",
+  "base": "svc-deploy",
+  "true": "svc-deploy"
+ },
+ {
+  "iid": 9,
+  "mult": 0.5,
+  "origin": "svc-deploy",
+  "base": "svc-deploy",
+  "true": "svc-deploy"
+ },
+ {
+  "iid": 9,
+  "mult": 1.0,
+  "origin": "svc-deploy",
+  "base": "svc-deploy",
+  "true": "svc-deploy"
+ },
+ {
+  "iid": 9,
+  "mult": 2.0,
+  "origin": "svc-deploy",
+  "base": "svc-deploy",
+  "true": "svc-deploy"
+ },
+ {
+  "iid": 10,
+  "mult": 0.0,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 10,
+  "mult": 0.5,
+  "origin": null,
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 10,
+  "mult": 1.0,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 10,
+  "mult": 2.0,
+  "origin": "build-01",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 11,
+  "mult": 0.0,
+  "origin": "svc-deploy",
+  "base": "svc-deploy",
+  "true": "svc-deploy"
+ },
+ {
+  "iid": 11,
+  "mult": 0.5,
+  "origin": "svc-deploy",
+  "base": "svc-deploy",
+  "true": "svc-deploy"
+ },
+ {
+  "iid": 11,
+  "mult": 1.0,
+  "origin": "svc-deploy",
+  "base": "svc-deploy",
+  "true": "svc-deploy"
+ },
+ {
+  "iid": 11,
+  "mult": 2.0,
+  "origin": "svc-deploy",
+  "base": "svc-deploy",
+  "true": "svc-deploy"
+ },
+ {
+  "iid": 12,
+  "mult": 0.0,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 12,
+  "mult": 0.5,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 12,
+  "mult": 1.0,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 12,
+  "mult": 2.0,
+  "origin": "u-dave",
+  "base": "u-dave",
+  "true": "u-dave"
+ },
+ {
+  "iid": 13,
+  "mult": 0.0,
+  "origin": "u-alice",
+  "base": "u-alice",
+  "true": "u-alice"
+ },
+ {
+  "iid": 13,
+  "mult": 0.5,
+  "origin": "u-alice",
+  "base": "u-alice",
+  "true": "u-alice"
+ },
+ {
+  "iid": 13,
+  "mult": 1.0,
+  "origin": "u-alice",
+  "base": "u-alice",
+  "true": "u-alice"
+ },
+ {
+  "iid": 13,
+  "mult": 2.0,
+  "origin": "u-alice",
+  "base": "u-alice",
+  "true": "u-alice"
+ },
+ {
+  "iid": 14,
+  "mult": 0.0,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 14,
+  "mult": 0.5,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 14,
+  "mult": 1.0,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 14,
+  "mult": 2.0,
+  "origin": "worker-01",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 15,
+  "mult": 0.0,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 15,
+  "mult": 0.5,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 15,
+  "mult": 1.0,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 15,
+  "mult": 2.0,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 16,
+  "mult": 0.0,
+  "origin": null,
+  "base": null,
+  "true": "u-carol"
+ },
+ {
+  "iid": 16,
+  "mult": 0.5,
+  "origin": null,
+  "base": null,
+  "true": "u-carol"
+ },
+ {
+  "iid": 16,
+  "mult": 1.0,
+  "origin": "u-carol",
+  "base": null,
+  "true": "u-carol"
+ },
+ {
+  "iid": 16,
+  "mult": 2.0,
+  "origin": "build-01",
+  "base": null,
+  "true": "u-carol"
+ },
+ {
+  "iid": 17,
+  "mult": 0.0,
+  "origin": "svc-backup",
+  "base": "svc-backup",
+  "true": "svc-backup"
+ },
+ {
+  "iid": 17,
+  "mult": 0.5,
+  "origin": "svc-backup",
+  "base": "svc-backup",
+  "true": "svc-backup"
+ },
+ {
+  "iid": 17,
+  "mult": 1.0,
+  "origin": "svc-backup",
+  "base": "svc-backup",
+  "true": "svc-backup"
+ },
+ {
+  "iid": 17,
+  "mult": 2.0,
+  "origin": "svc-backup",
+  "base": "svc-backup",
+  "true": "svc-backup"
+ },
+ {
+  "iid": 18,
+  "mult": 0.0,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 18,
+  "mult": 0.5,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 18,
+  "mult": 1.0,
+  "origin": "u-carol",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 18,
+  "mult": 2.0,
+  "origin": "__MISSING__",
+  "base": "u-carol",
+  "true": "u-carol"
+ },
+ {
+  "iid": 19,
+  "mult": 0.0,
+  "origin": "__MISSING__",
+  "base": "__MISSING__",
+  "true": "u-alice"
+ },
+ {
+  "iid": 19,
+  "mult": 0.5,
+  "origin": "__MISSING__",
+  "base": "__MISSING__",
+  "true": "u-alice"
+ },
+ {
+  "iid": 19,
+  "mult": 1.0,
+  "origin": "__MISSING__",
+  "base": "__MISSING__",
+  "true": "u-alice"
+ },
+ {
+  "iid": 19,
+  "mult": 2.0,
+  "origin": "__MISSING__",
+  "base": "__MISSING__",
+  "true": "u-alice"
+ }
+]
